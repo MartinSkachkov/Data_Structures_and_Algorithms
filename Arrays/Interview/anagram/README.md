@@ -21,25 +21,10 @@ Your task is to construct an algorithm to check whether two given words (or phra
 
 To check if two words or phrases are anagrams:
 
-1. **Remove spaces and ignore case sensitivity**: Anagrams are case-insensitive and spaces should be ignored.
-2. **Sort and Compare**: Sort the characters of both words. If the sorted characters match, the words are anagrams.
-3. Alternatively, you can **count the frequency of each letter** in both words using a hash map or a dictionary. If the frequency of each character is the same for both words, they are anagrams.
+1. **Sort and Compare**: Sort the characters of both words. If the sorted characters match, the words are anagrams.
+2. Alternatively, you can **count the frequency of each letter** in both words using a hash map or a dictionary. If the frequency of each character is the same for both words, they are anagrams.
 
 ## Time Complexity:
 
 - The time complexity is **O(N log N)** when using the sorting approach, where `N` is the length of the strings. Sorting is the most time-consuming step.
 - If using the frequency-counting approach, the time complexity is **O(N)**, where `N` is the length of the strings.
-
-## Solution (Python Code):
-
-Here’s a solution using the sorting approach:
-
-```python
-def are_anagrams(str1, str2):
-    # Remove spaces and convert to lowercase
-    str1 = str1.replace(" ", "").lower()
-    str2 = str2.replace(" ", "").lower()
-
-    # Sort the strings and compare
-    return sorted(str1) == sorted(str2)
-```

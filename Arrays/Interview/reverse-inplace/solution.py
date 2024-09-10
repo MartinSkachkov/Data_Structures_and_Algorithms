@@ -7,4 +7,4 @@ def reverse(nums):
         l += 1
         r -= 1
     
-    return nums  
+    return nums
