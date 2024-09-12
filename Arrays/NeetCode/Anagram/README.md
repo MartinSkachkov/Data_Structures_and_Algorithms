@@ -85,7 +85,7 @@ def isAnagram(s: str, t: str) -> bool:
 
 ## Summary of Time and Space Complexities
 
-| Solution                | Time Complexity | Space Complexity |
-| ----------------------- | --------------- | ---------------- |
-| **Counting Characters** | O(n)            | O(1)             |
-| **Sorting**             | O(n log n)      | O(n)             |
+| Solution                | Time Complexity | Space Complexity           |
+| ----------------------- | --------------- | -------------------------- |
+| **Counting Characters** | O(n)            | O(1) (26 alphabet letters) |
+| **Sorting**             | O(n log n)      | O(n)                       |
